@@ -1,0 +1,34 @@
+body {
+    background-color: #110c23;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }  
+}
+
+
+img {
+    animation: neon 4s alternate infinite ease-in-out;
+}
+
+.cocoro {
+    --cor-neon:#ff3366;
+}
+
+.texto {
+    --cor-neon: #ff3366;
+
+}
